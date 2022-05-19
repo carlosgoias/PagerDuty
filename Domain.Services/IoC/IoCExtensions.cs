@@ -6,6 +6,7 @@ namespace Domain.Services.IoC
     {
         public static IServiceCollection AddDomainServices(this IServiceCollection services)
         {
+            services.AddSingleton<IPagerDutyServices, PagerDutyServices>();
             return services;
         }
     }

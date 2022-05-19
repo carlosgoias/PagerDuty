@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.1.32421.90
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PagerDuty", "PagerDuty\PagerDuty.csproj", "{D01690B2-5508-41CE-A0EB-888823AC720C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PagerDuty", "PagerDuty\PagerDuty.csproj", "{D01690B2-5508-41CE-A0EB-888823AC720C}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1 - Presentation", "1 - Presentation", "{712236FA-41F6-442A-894D-AF73D837AF42}"
 EndProject
@@ -15,17 +15,17 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4 - Data", "4 - Data", "{BB
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "5 - Common", "5 - Common", "{0983A399-5F54-4D89-93FC-5B7328433F9F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Application.Services", "Application.Services\Application.Services.csproj", "{76BCAEDF-5E82-4792-8318-343B0A8D69C1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Application.Services", "Application.Services\Application.Services.csproj", "{76BCAEDF-5E82-4792-8318-343B0A8D69C1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Application.DTO", "Application.DTO\Application.DTO.csproj", "{1904D043-A169-4DAA-9ED3-7E071B80F5AB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Application.DTO", "Application.DTO\Application.DTO.csproj", "{1904D043-A169-4DAA-9ED3-7E071B80F5AB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domain.Model", "Domain.Model\Domain.Model.csproj", "{5FC309CB-A86F-4955-BC4E-3712F496C7B7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Domain.Model", "Domain.Model\Domain.Model.csproj", "{5FC309CB-A86F-4955-BC4E-3712F496C7B7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domain.Services", "Domain.Services\Domain.Services.csproj", "{AF5C4592-9AF8-46B5-8BCE-4A3EBDC50501}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Domain.Services", "Domain.Services\Domain.Services.csproj", "{AF5C4592-9AF8-46B5-8BCE-4A3EBDC50501}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Data.Gateway.PagerDuty", "Data.Gateways\Data.Gateway.PagerDuty.csproj", "{1E352EFC-086A-4BF1-A9D7-25878580D416}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Data.Gateway.PagerDuty", "Data.Gateways\Data.Gateway.PagerDuty.csproj", "{1E352EFC-086A-4BF1-A9D7-25878580D416}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common.Crosscutting", "Common.Crosscutting\Common.Crosscutting.csproj", "{02EC2CAB-A9C3-4143-8ECC-DA0598A77F14}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Common.Crosscutting", "Common.Crosscutting\Common.Crosscutting.csproj", "{02EC2CAB-A9C3-4143-8ECC-DA0598A77F14}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{1F4FA144-FCEF-4E94-A3F9-989D1B9185BE}"
 EndProject
@@ -34,6 +34,8 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "unit", "unit", "{F21E24C5-7FA4-4489-BD99-A986546561F0}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "integration", "integration", "{78F3BBF5-AFB8-4858-AA3C-2870EA2C54AE}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Domain.Services.Tests", "Data.Gateway.PagerDuty.Tests\Domain.Services.Tests.csproj", "{5A98059B-4B75-4C6B-80CD-1D5EA6B513E5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -69,6 +71,10 @@ Global
 		{02EC2CAB-A9C3-4143-8ECC-DA0598A77F14}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{02EC2CAB-A9C3-4143-8ECC-DA0598A77F14}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{02EC2CAB-A9C3-4143-8ECC-DA0598A77F14}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5A98059B-4B75-4C6B-80CD-1D5EA6B513E5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5A98059B-4B75-4C6B-80CD-1D5EA6B513E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5A98059B-4B75-4C6B-80CD-1D5EA6B513E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5A98059B-4B75-4C6B-80CD-1D5EA6B513E5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -88,6 +94,7 @@ Global
 		{02EC2CAB-A9C3-4143-8ECC-DA0598A77F14} = {0983A399-5F54-4D89-93FC-5B7328433F9F}
 		{F21E24C5-7FA4-4489-BD99-A986546561F0} = {AF75F319-CED8-4939-B18F-3F9903F5D0AF}
 		{78F3BBF5-AFB8-4858-AA3C-2870EA2C54AE} = {AF75F319-CED8-4939-B18F-3F9903F5D0AF}
+		{5A98059B-4B75-4C6B-80CD-1D5EA6B513E5} = {F21E24C5-7FA4-4489-BD99-A986546561F0}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {E5F29DC3-BC5D-47BD-923B-A419AA29F527}

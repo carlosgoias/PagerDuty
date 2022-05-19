@@ -1,23 +1,21 @@
 ﻿using System.Collections.Generic;
 using System.Threading.Tasks;
-using Data.Gateway.PagerDuty;
+using Application.Services;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Logging;
 
 namespace PagerDuty.Controllers
 {
     [ApiController]
+    [ApiVersion("1.0")]
     [Route("api/v1/[controller]")]
     public class AbilitiesController : ControllerBase
     {
-        private readonly ILogger<WeatherForecastController> _logger;
-        private readonly IPagerDutyGateway pagerDutyGateway;
+        private readonly IAbilityServices abilityServices;
 
-        public AbilitiesController(ILogger<WeatherForecastController> logger, IPagerDutyGateway pagerDutyGateway)
+        public AbilitiesController(IAbilityServices abilityServices)
         {
-            _logger = logger;
-            this.pagerDutyGateway = pagerDutyGateway;
+            this.abilityServices = abilityServices;
         }
 
         [HttpGet]
@@ -26,8 +24,8 @@ namespace PagerDuty.Controllers
         [ProducesResponseType(StatusCodes.Status500InternalServerError)]
         public async Task<IEnumerable<string>> Get()
         {
-            return await this.pagerDutyGateway
-                .GetAbilitiesAsync();
+            return await this.abilityServices
+                .GetAllAsync();
         }
     }
 }

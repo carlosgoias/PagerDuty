@@ -6,6 +6,7 @@ namespace Application.Services.IoC
     {
         public static IServiceCollection AddApplicationServices(this IServiceCollection services)
         {
+            services.AddSingleton<IAbilityServices, AbilityServices>();
             return services;
         }
     }
