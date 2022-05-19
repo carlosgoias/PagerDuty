@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Threading.Tasks;
 using Data.Gateway.PagerDuty;
+using Data.Gateway.PagerDuty.DataGateway;
 
 namespace Domain.Services
 {
@@ -16,6 +17,11 @@ namespace Domain.Services
         public async Task<IEnumerable<string>> GetAllAbilitiesAsync()
         {
             return await this.pagerDutyGateway.GetAbilitiesAsync();
+        }
+
+        public async Task<IEnumerable<UserData>> GetUsersAsync()
+        {
+            return await this.pagerDutyGateway.GetUsersAsync();
         }
     }
 }

@@ -27,5 +27,18 @@ namespace Data.Gateways
 
             return adapt.Abilities;
         }
+
+        public async Task<IEnumerable<UserData>> GetUsersAsync()
+        {
+            var response = await httpClient.GetAsync("/users");
+
+            response.EnsureSuccessStatusCode();
+
+            var result = await response.Content.ReadAsStringAsync();
+
+            var adapt = Newtonsoft.Json.JsonConvert.DeserializeObject<UsersResult>(result);
+
+            return adapt.users;
+        }
     }
 }
